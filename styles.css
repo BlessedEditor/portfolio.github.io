@@ -1,0 +1,314 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: rgb(51, 51, 51); /* Adjust the color and opacity as needed */
+    background-image: url("file:///C:/Users/Admin/Desktop/Portfolio/Assets/cubes.png");
+    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+    background-size: auto; /* Ensure the texture covers the entire background */
+    background-repeat: repeat; /* Repeat the texture if needed */
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+    padding: 1em 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #000000;
+    position: relative; /* Add relative positioning */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: color 0.3s ease-in-out; /* Smooth color transition */
+}
+
+/* Add hover effect */
+h2:hover {
+    color: #3a3a3a; /* Change text color on hover */
+}
+
+/* Add underline effect on hover */
+h2::after {
+    content: ''; /* Create pseudo-element */
+    position: absolute; /* Position relative to h2 */
+    bottom: -5px; /* Move below text */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    width: 50%; /* Set width */
+    height: 2px; /* Set height */
+    background-color: rgb(63, 63, 63); /* Set line color */
+    transition: width 0.3s ease-in-out; /* Smooth width transition */
+}
+
+/* Adjust underline width on hover */
+h2:hover::after {
+    width: 100%; /* Expand width on hover */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6e40;
+}
+
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.btn {
+    padding: 0.8em 2em;
+    background-color: #ff6e40;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff3d00;
+    transform: translateY(-5px);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+    animation: slideIn 1s ease-in-out;
+    background: rgba(255, 255, 255,0.8); /* Adjust the alpha value to control transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust shadow for glass effect */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2.5em;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 2em;
+    color: #333;
+}
+
+.software-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.software-list li {
+    margin: 0 1em;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+}
+
+.software-list img {
+    width: 32px;
+    height: 32px;
+    margin-right: 0.5em;
+}
+
+.slider {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.portfolio-grid {
+    display: grid;
+    gap: 2em;
+}
+
+.gallery-item {
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-item.vertical video {
+    width: 400px;
+    height: 700px;
+}
+
+.gallery-item.horizontal video {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}
+
+.gallery-item video {
+    border-radius: 10px;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    
+}
+
+.gallery-item:hover video {
+    transform: scale(1.05);
+}
+
+.gallery-item .video-title {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: opacity 0.3s;
+}
+
+.gallery-item:hover .video-title {
+    display: block;
+    opacity: 0.8;
+}
+
+.slick-slide {
+    padding: 0 1em;
+}
+
+.slick-prev, .slick-next {
+    color: #ff6e40;
+    font-size: 2em;
+}
+/* Add spacing between sections */
+section {
+    margin-bottom: 50px; /* Adjust as needed */
+}
+
+/* Improve visibility of slider buttons */
+.slick-prev, .slick-next {
+    color: #fff; /* Change button color to white */
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Add semi-transparent background */
+    padding: 10px; /* Increase button padding for better visibility */
+    border-radius: 50%; /* Make buttons circular */
+}
+
+/* Adjust hover effect for slider buttons */
+.slick-prev:hover, .slick-next:hover {
+    background-color: rgba(0, 0, 0, 0.7); /* Darken background on hover */
+}
+
+
+@media (max-width: 768px) {
+    .slider {
+        padding: 0;
+    }
+    .gallery-item.vertical video {
+        width: 100%;
+        height: auto;
+    }
+    .gallery-item.horizontal video {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Contact section styles */
+.contact-methods {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.contact-methods div {
+    text-align: center;
+}
+
+.contact-methods img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s;
+}
+
+.contact-methods img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: rgba(51, 51, 51, 0.8);
+    color: white;
+}
+
+footer p {
+    margin: 0;
+}

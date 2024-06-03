@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero-content">
+            <h1>Amogh Parab</h1>
+            <p>Bringing Your Stories to Life, Frame by Frame</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>With over a year of video editing experience across various niches, I bring a unique blend of technical skill and creative flair to every project. My passion for storytelling ensures that your vision is brought to life with precision and impact, making your content stand out in today's competitive landscape.</p>
+            <h3>Software I use:</h3>
+            <ul class="software-list">
+                <li><img src="assets/after-effects.png" alt="After Effects"> After Effects</li>
+                <li><img src="assets/premiere-pro.png" alt="Premiere Pro"> Premiere Pro</li>
+                <li><img src="assets/photoshop.png" alt="Photoshop"> Photoshop</li>
+                <li><img src="assets/canva.png" alt="Canva"> Canva</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>My Work</h2>
+            <h3>Short Form Videos</h3>
+            <div class="portfolio-grid vertical-videos">
+                <div class="gallery-item vertical">
+                    <video controls poster="assets/airblack_ad.png">
+                        <source src="assets/airblack_ad.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Airblack_ad</div>
+                </div>
+                <div class="gallery-item vertical">
+                    <video controls poster="assets/airblack_sample.png">
+                        <source src="assets/airblack_sample.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Course Reel</div>
+                </div>
+                <div class="gallery-item vertical">
+                    <video controls poster="assets/dream.png">
+                        <source src="assets/dream.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Cinematic Reel</div>
+                </div>
+                <div class="gallery-item vertical">
+                    <video controls poster="assets/twitter.png">
+                        <source src="assets/twitter.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Basic Podcast Highlight</div>
+                </div>
+            </div>
+
+            <h3>Long Form Videos</h3>
+            <div class="portfolio-grid horizontal-videos">
+                <div class="gallery-item horizontal">
+                    <video controls poster="assets/intro.png">
+                        <source src="assets/intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Introduction Video</div>
+                </div>
+                <div class="gallery-item horizontal">
+                    <video controls poster="assets/gym_commercial.png">
+                        <source src="assets/gym_commercial.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Gym Commercial Edit</div>
+                </div>
+                <div class="gallery-item horizontal">
+                    <video controls poster="assets/ging.png">
+                        <source src="assets/ging.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Anime Explanation Video</div>
+                </div>
+                <div class="gallery-item horizontal">
+                    <video controls poster="assets/wedding.png">
+                        <source src="assets/wedding.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-title">Wedding Invitation Video</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>Scan the QR code to reach me on WhatsApp or tap the Gmail icon to send an email.</p>
+            <div class="contact-methods">
+                <div class="qr-code">
+                    <img src="assets/whatsapp.jpg" alt="WhatsApp QR Code">
+                    <p>Contact me on WhatsApp</p>
+                </div>
+                <div class="email-icon">
+                    <a href="mailto:your-email@example.com">
+                        <img src="assets/gmail.png" alt="Gmail Icon">
+                        <p>Send me an email</p>
+                    </a>
+                </div>
+            </div>
+            <div class="contact-info">
+                <p>WhatsApp Number: +91 8828241509</p> <!-- Add your contact number here -->
+                <p>Email: blessededitor20@gmail.com</p> <!-- Add your email address here -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Amogh Parab. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
